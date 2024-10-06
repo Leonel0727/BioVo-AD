@@ -1,0 +1,17 @@
+[2024-10-06 21:32:24 +0800] [1289] [INFO] Starting gunicorn 21.2.0
+[2024-10-06 21:32:24 +0800] [1289] [INFO] Listening at: http://127.0.0.1:5021 (1289)
+[2024-10-06 21:32:24 +0800] [1289] [INFO] Using worker: sync
+[2024-10-06 21:32:24 +0800] [1293] [INFO] Booting worker with pid: 1293
+[2024-10-06 21:32:24 +0800] [1307] [INFO] Booting worker with pid: 1307
+[2024-10-06 21:32:24 +0800] [1311] [INFO] Booting worker with pid: 1311
+[2024-10-06 21:32:24 +0800] [1318] [INFO] Booting worker with pid: 1318
+[2024-10-06 21:32:38 +0800] [1293] [INFO] Worker exiting (pid: 1293)
+[2024-10-06 21:32:38 +0800] [1307] [INFO] Worker exiting (pid: 1307)
+[2024-10-06 21:32:38 +0800] [1311] [INFO] Worker exiting (pid: 1311)
+[2024-10-06 21:32:38 +0800] [1318] [INFO] Worker exiting (pid: 1318)
+[2024-10-06 21:32:38 +0800] [1289] [INFO] Handling signal: term
+[2024-10-06 21:32:38 +0800] [1289] [ERROR] Worker (pid:1318) was sent SIGTERM!
+[2024-10-06 21:32:38 +0800] [1289] [ERROR] Worker (pid:1307) was sent SIGTERM!
+[2024-10-06 21:32:38 +0800] [1289] [ERROR] Worker (pid:1293) was sent SIGTERM!
+[2024-10-06 21:32:38 +0800] [1289] [ERROR] Worker (pid:1311) was sent SIGTERM!
+[2024-10-06 21:32:38 +0800] [1289] [INFO] Shutting down: Master

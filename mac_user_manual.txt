@@ -1,0 +1,9 @@
+step 1 (path to the program):
+cd path/to/program
+exp:cd /Users/chonghao/Desktop/project_2.0.7 
+step 2(open WSGI server):
+chmod +x mac_start.sh
+step 3 (Run the Script):
+./mac_start.sh
+step 4 (close the WSGI):
+pkill -f gunicorn

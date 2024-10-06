@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Voting</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .thank-you-message {
+            margin-top: 100px;
+            font-size: 24px;
+        }
+
+        .redirect-timer {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<img src="png/happy.png" alt="ok" style="width: 300px; height: 400px; margin-top: 70px;margin-bottom: 0px;">
+
+<div class="thank-you-message">
+    <p>Thank you for voting!</p>
+    <p>Your vote has been recorded.</p>
+</div>
+
+<div class="redirect-timer">
+    <p>Redirecting to the next page in <span id="countdown">5</span> seconds...</p>
+</div>
+
+<script>
+    // Function to update the countdown timer
+    function updateCountdown() {
+        const countdownElement = document.getElementById('countdown');
+        let countdownValue = parseInt(countdownElement.innerText);
+
+        if (countdownValue > 0) {
+            countdownValue--;
+            countdownElement.innerText = countdownValue;
+        } else {
+            // Redirect to the next page after 5 seconds
+            window.location.href = 'ads_page.html';
+        }
+    }
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>

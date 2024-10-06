@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail Page</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/user_detail.css">
+    <script src="script/jquery.js"></script>
+</head>
+<body style= "background: url(png/bgvoting.gif) repeat round; background-color: #A3E4D7;">
+
+    <div class="container">
+        <h2>User Details</h2>
+        <div class="user-card" id="user-card">
+            <div class="avatar-container">
+                <label for="avatar">Avatar:</label>
+                <div id="avatar" name="avatar"></div>
+                <div class="avatar-preview" id="avatar-preview"></div>
+            </div>
+        </div>
+        <div class="user-info" id="user-info">
+                <p><strong>Name:</strong></p>
+                <div id="name" class="name"></div><br>
+                <p><strong>Matric No:</strong></p>
+                <div id="matric" class="matric"></div><br>
+                <p><strong>Email:</strong></p>
+                <div id="email" class="email"></div><br>
+                <p><strong>Class:</strong></p>
+                <div id="class" class="class"></div><br>
+                <p><strong>Status:</strong></p>
+                <div id="status" class="status"></div><br>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="not_me_page.html" id="not-me-button" class="button left-button">Not Me</a>
+        <a id="is-me-button" class="button right-button">It's Me</a>
+    </div>
+    <script src="script/user_detail.js"></script>
+</body>
+</html>

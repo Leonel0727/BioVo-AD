@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual Authentication</title>
+  <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+  <link rel="stylesheet" href="css/manual_authentication_page.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body style="background: url(png/bgvoting.gif) repeat round; background-color: #A3E4D7;">
+<h1>Manual Authentication</h1>
+  <div class="container">
+    <h3>Using Administration Username and Password</h3>
+    <form id="authForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <button type="submit" id="submit" class="submit">Submit</button>
+      <br>
+    </form>
+    <button type="button" id="exitButton">Exit</button>
+  </div>
+  <script src="script/manual_authentication_page.js"></script>
+</body>
+</html>

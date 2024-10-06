@@ -1,0 +1,13 @@
+[2024-10-06 21:32:24 +0800] [1286] [INFO] Starting gunicorn 21.2.0
+[2024-10-06 21:32:24 +0800] [1286] [INFO] Listening at: http://127.0.0.1:5004 (1286)
+[2024-10-06 21:32:24 +0800] [1286] [INFO] Using worker: sync
+[2024-10-06 21:32:24 +0800] [1294] [INFO] Booting worker with pid: 1294
+[2024-10-06 21:32:24 +0800] [1300] [INFO] Booting worker with pid: 1300
+[2024-10-06 21:32:24 +0800] [1304] [INFO] Booting worker with pid: 1304
+[2024-10-06 21:32:24 +0800] [1315] [INFO] Booting worker with pid: 1315
+[2024-10-06 21:32:38 +0800] [1286] [INFO] Handling signal: term
+[2024-10-06 21:32:38 +0800] [1300] [INFO] Worker exiting (pid: 1300)
+[2024-10-06 21:32:38 +0800] [1304] [INFO] Worker exiting (pid: 1304)
+[2024-10-06 21:32:38 +0800] [1294] [INFO] Worker exiting (pid: 1294)
+[2024-10-06 21:32:38 +0800] [1315] [INFO] Worker exiting (pid: 1315)
+[2024-10-06 21:32:38 +0800] [1286] [INFO] Shutting down: Master
