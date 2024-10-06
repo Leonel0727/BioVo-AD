@@ -1,0 +1,215 @@
+/* css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+h2,p {
+text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transition: font-size 0.3s ease-in-out;
+}
+nav a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #E16960;
+    font-size: 20px;
+}
+main {
+    padding: 20px;
+}
+/* database container */
+.database {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#databaseList {
+
+  margin: auto auto;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* database field */
+.database input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #aaa;
+    color: #fff;
+}
+/* database "button" */
+.database button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.database button:hover {
+    background-color: #0056b3;
+}
+
+
+/* refresh "button" */
+#refresh_candidate {
+    background-color: #52BE80;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refresh_candidate:hover {
+    background-color: #1D8348;
+    color: #fff
+}
+
+
+#refresh_voter {
+    background-color: #52BE80;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refresh_voter:hover {
+    background-color: #1D8348;
+    color: #fff
+}
+
+
+#refresh_voting {
+    background-color: #52BE80;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refresh_voting:hover {
+    background-color: #1D8348;
+    color: #fff
+}
+
+#showDatabasesButton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showDatabasesButton:hover {
+    background-color: #0056b3;
+    color: #fff
+}
+
+#logout {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#logout:hover {
+    background-color: #B03A2E;
+    color: #fff;
+}
+
+
+/* database ”use“ container*/
+.databaselabelcontainer {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Candidate Container */
+#Block{
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+}
+
+#listContainer{
+    text-align: center;
+}
+
+/* label */
+.label {
+    font-weight: bold;
+}
+
+.database-gray-text {
+    color: silver;
+}

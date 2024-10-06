@@ -1,0 +1,221 @@
+/* css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    transition: font-size 0.3s ease-in-out;
+}
+nav a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 20px;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #E16960;
+    font-size: 20px;
+}
+
+main {
+    padding: 20px;
+}
+/* Styling for the container */
+.container {
+    background-color: #fff;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.full-container {
+    background-color: #fff;
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border: 0px solid #ccc;
+    border-radius: 2px;
+    //margin: 40px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Avatar upload area */
+.avatar-container {
+    text-align: center;
+    margin: 10px 20px 20px 30px;
+    margin-bottom: 20px;
+}
+
+.avatar-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.avatar-container input[type="file"] {
+    display: none;
+}
+
+.avatar-preview {
+    width: 320px;
+    height: 320px;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label 
+{
+    font-weight: bold;
+            
+}
+
+input[type="text"],
+select,
+textarea 
+{
+     text-align: left;
+     width: 90%;
+     padding: 10px;
+     margin-bottom: 30px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+}
+
+input[type="number"],
+select,
+textarea
+{
+     text-align: left;
+     width: 20%;
+     padding: 10px;
+     margin-bottom: 30px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+}
+
+textarea
+{
+     text-align: left;
+     width: 90%;
+     padding: 10px;
+     margin-bottom: 30px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+}
+
+/* Candidate number area */
+.candidate-container {
+    background-color: #fff;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.candidate-container label {
+   
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-container button {
+    padding: 10px 20px;
+    background-color: #52BE80;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-container button:hover{
+    background-color: #1D8348;
+    color: #fff;
+}
+
+button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+#upload {
+    background-color: #52BE80;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#upload:hover {
+    background-color: #1D8348;
+    color: #fff;
+}
+
+#logout {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#logout:hover {
+    background-color: #B03A2E;
+    color: #fff;
+}
+/* Select dropdown styles */
+select {
+    padding: 5px;
+    border-radius: 5px;
+}

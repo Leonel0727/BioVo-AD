@@ -1,0 +1,88 @@
+body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 500px; /* Set the width of your container */
+      text-align: center;
+      padding: 20px;
+      margin: 40px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+h1 {
+    text-align: center;
+    background-color: #138D75;
+    color: white;
+    padding: 40px;
+    margin-top: 0;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    
+}
+  
+
+    label {
+      display: block;
+      margin-left: 15px;
+      margin-bottom: 8px;
+      text-align: left;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-size: 16px;
+      
+    }
+
+    button {
+      padding: 15px 40px;
+      margin-right: 10px;
+      font-size: 16px;
+      background-color: #27AE60;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #0F7E3E;
+    }
+
+    #backButton {
+      background-color: #aaa;
+    }
+
+    #backButton:hover {
+      background-color: #6F6F6F;
+    }
+
+    #exitButton {
+      background-color: #EE4444;
+      margin-top: 40px;
+    }
+
+    #exitButton:hover {
+      background-color: #AF0000;
+    }
+
+    .alert {
+      color: #d9534f;
+      margin-top: 10px;
+    }

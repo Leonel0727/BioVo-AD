@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/database.css">
+    <script src="script/jquery.js"></script>
+    <title>Database Information</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+</head>
+<body style= "background: url(png/bgdatabase.gif) repeat center; background-color: #FDF2E9;">
+    <h1>Database Information</h1>
+    <form>
+        <label for="dbHost">Database's Host:</label>
+        <input type="text" id="dbHost" name="dbHost" required><br><br>
+
+        <label for="dbUser">Database's User:</label>
+        <input type="text" id="dbUser" name="dbUser" required><br><br>
+
+        <label for="dbPasswd">Database's Password:</label>
+        <input type="password" id="dbPasswd" name="dbPasswd" required><br><br>
+        
+        <label for="dbdatabase">Database's Name:</label>
+        <input type="text" id="dbdatabase" name="dbdatabase" required><br><br>
+
+	<button id="backButton">Back</button>
+        <input type="submit" id="submitButton" value="Submit">
+	
+    </form>
+    <script src="script/database.js"></script>
+</body>
+</html>

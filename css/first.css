@@ -1,0 +1,133 @@
+ /* Body background color */
+ body {
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #37474F;; 
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Add hover effect to navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Centering content vertically and horizontally */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+}
+
+/* Style for custom buttons */
+.custom-button1 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 40px 120px; /* Larger padding */
+    cursor: pointer;
+    font-size: 40px; /* Larger font size */
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 2.5, 2.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-button2 {
+    background-color: #27AE60;
+    color: #fff;
+    border: none;
+    padding: 40px 120px; /* Larger padding */
+    cursor: pointer;
+    font-size: 40px; /* Larger font size */
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 2.5, 2.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-button3 {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    padding: 40px 120px; /* Larger padding */
+    cursor: pointer;
+    font-size: 40px; /* Larger font size */
+    margin: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 2.5, 2.5);
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Add hover effect*/
+.custom-button1:hover {
+    background-color: #0056b3;
+}
+
+.custom-button2:hover {
+    background-color: #1E8449;
+}
+
+.custom-button3:hover {
+    background-color: #A93226;
+}
+
+/* Header styling */
+h1 {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Make buttons display horizontally */
+.button-container {
+    display: flex;
+    justify-content: center;
+}

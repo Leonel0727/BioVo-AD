@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user-card img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.user-info {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+p {
+    margin: 5px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 20px;
+    width: calc(100% - 40px);
+}
+
+.left-button,
+.right-button {
+    margin: 0 20px;
+    background-color: #E74C3C;
+    transition: .3s;
+}
+
+.right-button {
+    background-color: #27AE60;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    animation: pulse 1s infinite;
+    transition: .5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.avatar-preview {
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.avatar-container {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+.avatar-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

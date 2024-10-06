@@ -1,0 +1,114 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  opacity: 0.5;
+  width: 300px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  transition: opacity 0.5s ease;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Reset some default styles */
+body, h1, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Style the h1 header */
+h1 {
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Style the custom button */
+.custom-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    font-size: 20px; /* Larger font size */
+    padding: 40px 120px; /* Larger padding */
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Add some hover effect to the custom button */
+.custom-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style the images inside the buttons */
+.custom-button img {
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* Add some space between the image and text */
+.custom-button br {
+    margin-top: 5px;
+}
+
+/* Center the buttons */
+#btnAddVoter, #btnDatabase, #btnAddAdministration {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 40px;
+    width: 900px;
+    margin: 40px auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+button#logout {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#logout:hover {
+    background-color: #999;
+    color: #fff;
+}

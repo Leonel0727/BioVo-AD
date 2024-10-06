@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition Failed</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/fail_detection.css">
+</head>
+<body style= "background: url(png/bgvoting.gif) repeat round; background-color: #A3E4D7;">
+<div class="container">
+    <h1>Face Recognition Failed!</h1>
+    <p>Your face recognition was not successful.</p>
+    <div class="button-container">
+        <button id="exitButton">Exit</button>
+        <button id="authenticateButton">Manually Authenticate</button>
+    </div>
+</div>
+<script>
+
+    document.getElementById('exitButton').addEventListener('click', function() {
+        window.location.href = 'voter_start.html';
+    });
+
+    document.getElementById('authenticateButton').addEventListener('click', function() {
+        window.location.href = 'manual_authentication_page.html';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Identify Authentication</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/ID_Authentication.css">
+    <script src="script/jquery.js"></script>
+
+</head>
+<body style= "background: url(png/bgvoting.gif) repeat round; background-color: #A3E4D7;" >
+<h1>Scan your Barcode</h1>
+<div class="barcode-container">
+    <label for="barcode-input"></label><input type="text" id="barcode-input" class="barcode-input"placeholder="Scan barcode..." autofocus>
+    <div id="result"></div>
+    <input type="hidden" id="barcode-data" class="barcode-data" name="barcode-data">
+</div>
+<div class="video-container">
+    <h3>Tutorial Video</h3>
+    <video id="video-player" autoplay loop muted controlsList="nodownload">
+        <source src="video/barcodeTutorial.mp4" type="video/mp4">
+        Your browser does not support MP4 video.
+    </video>
+</div>
+<audio id="success-audio">
+    <source src="/sound/pi.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<br>
+<div class="tooltip">
+<button type="button" id="manually">Manual Authentication by Administration</button>
+<span class="tooltiptext">Having problem? Tap here to manually authenticate by the administration.</span>
+</div>
+<script src="script/ID_Authentication.js"></script>
+</body>
+</html>

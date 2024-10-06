@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+    text-align: center;
+}
+
+#table_data {
+  //background-color: yellow;
+  margin: 5px auto;
+    width: 150px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.button-container {
+    width: 500px; /* Adjust the width as needed */
+    margin: 0 auto;
+    text-align: center;
+}
+
+#back {
+  margin: 5px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#logout {
+  margin: 5px;
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container {
+    background-color: #fff;
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea,
+input[id="matric1"] {
+    text-align: left;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Avatar upload area */
+.avatar-container {
+    text-align: center;
+    margin: 10px 20px 20px 30px;
+}
+
+.avatar-container label {
+    display: block;
+    font-weight: bold;
+}
+
+.avatar-container input[type="file"] {
+    display: none;
+}
+
+.avatar-preview {
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Candidate number area */
+.candidate-container {
+    background-color: #fff;
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.candidate-container label {
+    font-weight: bold;
+}
+
+/* Button styles */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button, #upload {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#readButton, #submitButton{
+    background-color: #52BE80;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover, #logout:hover, #back:hover, #readButton:hover, #submitButton:hover, #upload:hover {
+    background-color: #999;
+    color: #fff;
+}

@@ -1,0 +1,115 @@
+/* Reset some default styles */
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 40px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+
+    
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #27AE60;
+    color: #fff;
+    width: 160px;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 25px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+button[type="submit"]:hover {
+    background-color: #0F7E3E;
+    color: #fff;
+}
+
+/* Style the reset button */
+button[type="reset"] {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    width: 160px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+button[type="reset"]:hover {
+    background-color: #CB4335;
+    color: #fff;
+}
+
+/* Style for back button */
+button#back{
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 15px 20px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#back:hover {
+    background-color: #999;
+    color: #fff;
+}
+#error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
