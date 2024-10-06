@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/administration_add_voter.css">
+    <script src="script/jquery.js"></script>
+    <title>Administration Add Voter</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+</head>
+<body style= "background: url(png/bgsecurity.gif) repeat center; background-color: #E0F2F1;">
+    <h1>Administration Add Voter</h1>
+    
+
+    <div class="container">
+        <h4 align="center">Current Database Table:</h4><div id="table_data"align="center"></div>
+        
+        <br>
+        <h2>Voter Profile Form</h2>
+        <br><br>
+        <form id="voter-form" method="POST" action="/voter">
+            <!-- Avatar upload -->
+            <div class="avatar-container">
+                <label for="avatar">Avatar(no large than 5 MB): (only .png)</label><br>
+                <label for="avatar">Click >here< to upload image</label>
+                <label for="avatar">>here<</label><br>
+                <input type="file" id="avatar" name="avatar" accept="image/png">
+                <div class="avatar-preview" id="avatar-preview">Click to choose an avatar</div><br>
+            </div>
+            <div>
+                <label for="matric">Matric No:</label>
+                <input type="text" id="matric" name="matric" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="icno">IC:</label>
+                <input type="text" id="icno" name="icno" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="off" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" autocomplete="off" required>
+            </div>
+
+            <div>
+                <label for="class1">Class:</label>
+                <input type="text" id="class1" name="class1" required>
+            </div>
+
+            <div>
+                <label for="status">Status:</label>
+                <div id="status" name="status"></div>
+            </div>
+
+            <div class="btn-container">
+                <button id="clear" class="clear">Clear</button>
+                <button type="submit" id="submitButton" class="submitButton">Submit</button>
+                
+            </div>
+        </form>
+    </div>
+
+    <div>
+        <div class="candidate-container">
+            <label for="candidate-no">Matric No:</label>
+            <input type="text" id="matric1" name="matric1" placeholder="Insert Matric No" autocomplete="off">
+            <div class="btn-container">
+            <button id="clear" class="clear">Clear</button>
+            <button id="readButton" class="readButton">Read</button>
+            </div>
+            
+        </div>
+        
+    </div>
+<div class="button-container">
+    <button type="button" id="back" class="back">Back</button>
+    <button type="button" id="logout" class="logout">Log Out</button> 
+    </div>
+    
+    <script src="script/logout.js"></script>
+    <script src="script/administration_add_voter.js"></script>
+</body>
+</html>

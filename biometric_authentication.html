@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biometric_authentication</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/biometric_authentication.css">
+    <script src="script/jquery.js"></script>
+</head>
+<body style= "background: url(png/bgvoting.gif) repeat round; background-color: #A3E4D7;">
+    <div class="container">
+        <div class="avatar-container">
+            <h2><label for="avatar">Avatar:</label></h2>
+            <div class="avatar-preview" id="avatar-preview"></div>
+        </div>
+        <div class="camera">
+            <h2>Scan your Face</h2>
+            <video id="webcam" width="100%" height="auto"></video>
+        </div>
+    </div>
+    <div id="countdown"></div>
+    <div class="centered-text">
+        <p>Similarity: (Target > 75)</p>
+        <p id="similarity" class="similarity">0</p>
+        <p>Chance to make face recognition:</p>
+        <p id="chance" class="chance"></p>
+    </div>
+
+    <button id="captureBtn">Capture</button>
+    <a href="voter_start.html" class="next-button">NOT ME!!!</a>
+    <script src="script/biometric_authentication.js"></script>
+</body>
+</html>

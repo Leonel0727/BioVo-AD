@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/administration_login.css">
+    <script src="script/jquery.js"></script>
+    <script src="script/administration_login.js"></script>
+    <title>Administration Login Page</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+</head>
+<body style= "background: url(png/bgsecurity.gif) repeat center; background-color: #E0F2F1;">
+    <h1>Administration Login</h1>
+
+    <div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form" method="POST" action="/login">
+        <div id="message" class="error"></div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="User Name" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <!-- Add the "Reset Password" button below -->
+        <button type="reset" id="reset-password">Reset Password</button>
+        <button type="submit" value="Login">Login</button>
+    </form><br><br>
+    <button id="back" class="back">Back</button>
+    <p id="error-message"></p>
+    
+</div>
+
+
+</body>
+</html>

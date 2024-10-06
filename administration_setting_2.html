@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and Candidates Setup</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/administration_setting_2.css">
+    <script src="script/jquery.js"></script>
+</head>
+<body style= "background: url(png/bar.gif) repeat ; background-color: #E0F2F1;">
+<header>
+    <h1>Position & Candidates Setup</h1>
+</header>
+<nav>
+    <a href="administration_setting_1.html">Database</a>
+    <a href="administration_setting_2.html">Position and Candidate</a>
+    <a href="administration_setting_3.html">Candidate Information</a>
+    <a href="administration_setting_4.html">Time</a>
+    <button id="back" class="back">Back</button>
+    <button type="button" id="logout" class="logout">Log Out</button>
+</nav>
+<main>
+    <!-- content of administration setting page 2 -->
+    <h2>Set-up the details of the voting process below:</h2>
+
+    <div class="container">
+<h3>Select required options:</h3><br>
+        <label for="positions">Number of Positions to Vote:</label>
+        <select id="positions" name="positions">
+            <!-- JavaScript will generate options from 1 to 30 here -->
+        </select>
+        <br>
+
+        <label for="candidates">Number of Candidates:</label>
+        <select id="candidates" name="candidates">
+            <!-- JavaScript will generate options from 1 to 60 here -->
+        </select>
+        <br>
+
+        <!-- Add the "OK" button -->
+        <br>
+        <button id="confirmButton" class="confirmButton">OK</button>
+    </div>
+
+    <div class="labelContainer">
+        <h3>This Voting Position and Candidate Setting</h3>
+    
+        <div class="labelRow">
+            <label class="labelTitle">Table:</label>
+            <div id="table_data" class="labelData"></div> 
+        </div>
+        <div class="labelRow">
+            <label class="labelTitle">Position:</label>
+            <label id="position_count" class="labelData"></label> 
+        </div>
+    
+        <div class="labelRow">
+            <label class="labelTitle">Candidates:</label>
+            <label id="candidate_count" class="labelData"></label> 
+        </div>
+    
+        <div class="labelRow">
+            <label class="labelTitle">One candidate can take many positions:</label>
+            <label id="status" class="labelData"></label> 
+        </div>
+        <button id="get_inform" class="confirmButton">Get Inform</button>
+    </div>
+    <script src="script/administration_setting_2.js"></script>
+    <script src="script/logout.js"></script>
+</main>
+</body>
+</html>

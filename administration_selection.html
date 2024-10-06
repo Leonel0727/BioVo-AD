@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <title>Administration Selection</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+    <link rel="stylesheet" href="css/administration_selection.css">
+    <script src="script/jquery.js"></script>
+</head>
+<body style= "background: url(png/bgsecurity.gif) repeat center; background-color: #E0F2F1;">
+    <h1>Welcome to Administration Page</h1>
+    
+<div class="container">
+    <!-- 1st button -->
+    <div class="tooltip">
+    <button class="custom-button" id="btnAddVoter">
+        <img src="png/fp_voting.png" alt="png_button1">
+		<br>
+        Add Voter
+    </button>
+    <span class="tooltiptext">Tap to add new voters into the system.</span>
+    </div>
+
+    <!-- 2nd -->
+    <div class="tooltip">
+    <button class="custom-button" id="btnDatabase">
+        <img src="png/fp_db1.png" alt="png_button2">
+		<br>
+        Database setting
+    </button>
+    <span class="tooltiptext">Tap to change database settings of the system.</span>
+    </div>
+    <!-- 3nd -->
+    <div class="tooltip">
+    <button class="custom-button" id="btnAddAdministration">
+        <img src="png/fp_adm.png" alt="png_button2">
+		<br>
+        Add administration
+    </button>
+   <span class="tooltiptext">Tap to add new administration members into the system.</span>
+    </div>
+    <br>
+    <a href="#" id="downloadLink">BioVo-AD User Manual</a>
+</div>
+    <button type="button" id="logout" class="logout">Log Out</button>
+    
+    <script src="script/administration_selection.js"></script>
+    <script src="script/logout.js"></script>
+    <script>
+        document.getElementById('downloadLink').addEventListener('click', function() {
+        // Update file URL and name for PDF
+        var fileUrl = 'DFP40203_PBT2.pdf';
+        var fileName = 'DFP40203_PBT21.pdf';
+
+        // Disable the link temporarily to prevent duplicate clicks
+        this.setAttribute('disabled', 'true');
+
+        // Create a link element after a delay
+        setTimeout(function() {
+            var link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = fileName;
+
+            // Open the link in a new page or tab
+            link.target = '_blank';
+
+            link.click();
+
+            // Enable the link after the download is initiated
+            document.getElementById('downloadLink').removeAttribute('disabled');
+        }, 100);
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Profile Setup</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/administration_setting_3.css">
+    <script src="script/jquery.js"></script>
+</head>
+<body style= "background: url(png/bar.gif) repeat ; background-color: #E0F2F1;">
+<header>
+    <h1>Candidate Profile Setup</h1>
+</header>
+<nav>
+    <a href="administration_setting_1.html">Database</a>
+    <a href="administration_setting_2.html">Position and Candidate</a>
+    <a href="administration_setting_3.html">Candidate Information</a>
+    <a href="administration_setting_4.html">Time</a>
+    <button id="back" class="back">Back</button>
+    <button type="button" id="logout" class="logout">Log Out</button>
+</nav>
+<main>
+    <!-- content of administration setting page 3 -->
+    <h2>Set-up the Candidate Profiles below:</h2>
+
+ <div class="container">
+    <h2>Information:</h2>
+    <p1><b>Using database's table: </b></p>
+    <div id="table_data"></div><br>
+    <p1><b>Total candidate: </b></p>
+    <div id="candidate_count"></div>
+ </div>
+
+    <div class="container">
+        <h2>Candidate Profile Form</h2>
+        <form id="candidate-form" method="POST" action="/candidate">
+            <!-- Avatar upload -->
+            <div class="avatar-container">
+                <label for="avatar">Avatar(no large than 5 MB): (only .png)</label>
+                <label for="avatar">Click >here< to upload image</label>
+                <label for="avatar">>here<</label><br>
+                <input type="file" id="avatar" name="avatar" accept="image/png">
+                <div class="avatar-preview" id="avatar-preview">Click to choose an avatar</div>
+            </div>
+            
+            <!-- Name field -->
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="off" required>
+            </div>
+
+            <!-- Class field -->
+            <div>
+                <label for="class1">Class:</label>
+                <input type="text" id="class1" name="class" required>
+            </div>
+
+            <!-- Skills field -->
+            <div>
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" autocomplete="off" required>
+            </div>
+
+            <!-- Age field -->
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" autocomplete="off" required>
+            </div>
+
+            <!-- Bio field -->
+            <div>
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio" rows="4" autocomplete="off" required></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="btn-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="candidate-container">
+        <!-- Candidate number selection -->
+            <label for="candidate-no">Candidate No :</label>
+            <select id="candidate-no">
+                <!-- Dynamically generated options using JavaScript -->
+            </select>
+            <div class="btn-container">
+            <button id="readButton" class="readButton">Read</button>
+            </div>
+    </div>
+
+    <script src="script/administration_setting_3.js"></script>
+    <script src="script/logout.js"></script>
+</main>
+</body>
+</html>

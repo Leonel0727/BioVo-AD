@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Advertisement</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+    <script src="script/jquery.js"></script>
+    <link rel="stylesheet" href="css/ads_page.css">
+</head>
+<body style= "background: url(png/bgmain.gif) repeat center ; background-color: #E0F2F1;">
+<h1>Thank You for Voting!</h1>
+<h3>To proceed, please click the left mouse button or press any key on your keyboard!</h3>
+
+<div class="big">
+<div class="ad-container" id="ad-container"></div>
+</div>
+
+<a href="voter_start.html" id="redirect-link"></a>
+
+<script>
+
+    function redirectToAHtml() {
+        window.location.href = 'voter_start.html';
+    }
+
+    // Add click event listeners
+    document.addEventListener('click', redirectToAHtml);
+    document.addEventListener('keydown', redirectToAHtml);
+</script>
+<script src="script/ads_page.js"></script>
+</body>
+</html>

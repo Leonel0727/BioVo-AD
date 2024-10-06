@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Setup</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/administration_setting_4.css">
+    <link rel="stylesheet" href="node_modules/flatpickr/dist/flatpickr.min.css">
+    <script src="script/jquery.js"></script>
+    
+</head>
+<body style= "background: url(png/bar.gif) repeat ; background-color: #E0F2F1;">
+<header>
+    <h1>Time Setup</h1>
+</header>
+<nav>
+    <a href="administration_setting_1.html">Database</a>
+    <a href="administration_setting_2.html">Position and Candidate</a>
+    <a href="administration_setting_3.html">Candidate Information</a>
+    <a href="administration_setting_4.html">Time</a>
+    <button id="back" class="back">Back</button>
+    <button type="button" id="logout" class="logout">Log Out</button>
+</nav>
+<main>
+    <!-- content of administration setting page 4 -->
+    <h2>Set-up Time and Event Details below:</h2>
+
+   <div class="container">
+    <h4>Using database's table:</h4>
+    <div id="table_data"></div>
+   </div>
+
+    <!-- Container for Folder Selection -->
+    <div class="container">
+        <label for="file-upload">Insert the folder name for the ads images:  <br>(only will read all images less than 5MB,and play image a-z)<br>(recommand image scale: 3:2)</label><br>
+        <input type="text" id="file_upload" placeholder="C:\Users\YourUsername\Documents\Image Folder">
+        <button type="button" id="upload-ads" class="upload-ads">Upload File</button>
+    </div>
+
+    <!-- Container for Time Selection -->
+    <div class="timeContainer">
+    <h3>Set starting and ending time of voting:</h3>
+        <label for="start-time">Start Time:</label>
+        <input type="text" id="start-time" placeholder="start time">
+        <br>
+        <br>
+
+        <label for="end-time">End Time:</label>
+        <input type="text" id="end-time" placeholder="end time">
+        <br>
+
+        <!-- OK Button -->
+        <button id="ok-button">OK</button>
+    </div>
+    
+
+    <script src="node_modules/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="script/administration_setting_4.js"></script>
+    <script src="script/logout.js"></script>
+</main>
+</body>
+</html>

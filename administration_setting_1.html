@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Setup</title>
+    <link rel="icon" type="image/x-icon" href="png/favicon2.ico">
+
+    <link rel="stylesheet" href="css/administration_setting_1.css">
+    <script src="script/jquery.js"></script>
+</head>
+<body style= "background: url(png/bar.gif) repeat; background-color: #E0F2F1;">
+<header>
+    <h1>Database Setup</h1>
+</header>
+<nav>
+    <a href="administration_setting_1.html">Database</a>
+    <a href="administration_setting_2.html">Position and Candidate</a>
+    <a href="administration_setting_3.html">Candidate Information</a>
+    <a href="administration_setting_4.html">Time</a>
+    <button id="back" class="back">Back</button>
+    <button type="button" id="logout" class="logout">Log Out</button>
+</nav>
+<main>
+    <!-- content of administration setting page 1 -->
+    <h2>Set-up the database informations below:</h2>
+
+<div id="Block">
+    <h2>Candidate</h2>
+    <div class="databaselabelcontainer" id="candidate_database">
+        <h2>Table Candidate</h2>
+        <label id="label" class="label">Candidate Database using:</label>
+        <div id="databaseName_candidate" class="database-gray-text">No database are using</div>
+        <button id="refresh_candidate">Refresh</button>
+    </div>
+    <div class="database">
+        <!-- text field -->
+        <h2>Table Candidate</h2>
+        <input type="text" id="databaseFile_candidate" placeholder="Enter text" autocomplete="off">
+
+        <!-- Modified button -->
+        <button id="modifiedButton_candidate">Modified</button>
+        <br>
+        <br>
+        <!-- create button -->
+        <button id="createButton_candidate">Create</button>
+    </div>
+</div>
+
+
+<div id="Block">
+    <h2>Voter</h2>
+    <div class="databaselabelcontainer" id="voter_database">
+        <h2>Table voter</h2>
+        <label id="label" class="label">Voter Database using:</label>
+        <div id="databaseName_voter" class="database-gray-text">No database are using</div>
+        <button id="refresh_voter">Refresh</button>
+    </div>
+    <div class="database">
+        <h2>Table voter</h2>
+        <!-- text field -->
+        <input type="text" id="databaseFile_voter" placeholder="Enter text" autocomplete="off">
+
+        <!-- Modified button -->
+        <button id="modifiedButton_voter">Modified</button>
+        <br>
+        <br>
+        <!-- create button -->
+        <button id="createButton_voter">Create</button>
+    </div>
+</div>
+
+<div id="Block">
+    <h2>Voting</h2>
+    <div class="databaselabelcontainer" id="voting_database">
+        <h2>Table voting</h2>
+        <label id="label" class="label">Voting data Database using:</label>
+        <div id="databaseName_voting" class="database-gray-text">No database are using</div>
+        <button id="refresh_voting">Refresh</button>
+    </div>
+    <div class="database">
+        <h2>Table Voting</h2>
+        <!-- text field -->
+        <input type="text" id="databaseFile_voting" placeholder="Enter text" autocomplete="off">
+
+        <!-- Modified button -->
+        <button id="modifiedButton_voting">Modified</button>
+        <br>
+        <br>
+        <!-- create button -->
+        <button id="createButton_voting">Create</button>
+    </div>
+</div>
+
+<div id="Block">
+
+    <div class="list-container" id="listContainer">
+        <h2>Database List:</h2>
+
+        <ul id="databaseList">
+            <!-- The database list will be displayed here -->
+        </ul>
+        <button id="showDatabasesButton">Show Databases</button> <!-- Button to trigger the AJAX request -->
+    </div>
+
+    <div id="fileContent" style="white-space: pre-wrap;"></div> <!-- area to display file contents-->
+</div>
+    <script src="script/administration_setting_1.js"></script>
+    <script src="script/logout.js"></script>
+</main>
+</body>
+</html>
